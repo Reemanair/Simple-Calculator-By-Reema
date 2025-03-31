@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p class="js-result"></p>
+<p>
+  <button onclick="num=num+'1'; console.log(num); document.querySelector('.js-result').innerHTML=display;" class="js-value">1</button>
+  <button onclick="num=num+'2'; console.log(num); document.querySelector('.js-result').innerHTML=display;" class="js-value">2</button>
+  <button onclick="num=num+'3'; console.log(num); document.querySelector('.js-result').innerHTML=display;" class="js-value">3</button>
+  <button onclick="num=num+' + '; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-opr">+</button>
+</p>
+<p>
+  <button onclick="num=num+'4'; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-value">4</button>
+  <button onclick="num=num+'5'; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-value">5</button>
+  <button onclick="num=num+'6'; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-value">6</button>
+  <button onclick="num=num+' - '; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-opr">-</button>
+</p> 
+<p>
+  <button onclick="num=num+'7'; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-value">7</button>
+  <button onclick="num=num+'8'; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-value">8</button>
+  <button onclick="num=num+'9'; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-value">9</button>
+  <button onclick="num=num+' * '; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-opr">*</button>
+
+</p> 
+<p>
+  
+  <button onclick="num=num+'0'; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-value">0</button>
+  <button onclick="num=num+'.'; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-value">.</button>
+  <button onclick="num=eval(num); console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-value">=</button>
+  <button onclick="num=num+' / '; console.log(num); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-opr">/</button>
+</p>  
+
+  <button onclick="num=''; console.log('Enter the value'); display=num; document.querySelector('.js-result').innerHTML=display;" class="js-clr">clear</button>
+  
+  <script>
+    let num='';
+    let display='';
+    document.querySelector('.js-result').innerHTML=display;
+  </script>
+</body>
+</html>
